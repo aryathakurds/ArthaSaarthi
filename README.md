@@ -1,126 +1,75 @@
 # ArthaSaarthi AI
 
-ArthaSaarthi AI is a bank-integrated, avatar-based digital wealth and safety assistant.
+[Live Demo](https://artha-saarthi-psi.vercel.app/) | [Prototype Demo](https://artha-saarthi-psi.vercel.app/prototype.html)
 
-It helps customers receive personalized wealth guidance, make safer financial decisions, optimize idle money, and verify unusual transactions instantly inside the bank mobile app.
+ArthaSaarthi AI is an AI-powered digital wealth management prototype for banks. It brings personalized wealth advisory, financial behavior analysis, loan and investment simulations, funding account benefits, unusual payment verification, and Trust Layer AI into one customer-friendly digital experience.
 
-## One-Line Pitch
+## Problem Statement
 
-ArthaSaarthi AI transforms everyday banking behavior into personalized, explainable, and secure financial guidance through a trusted AI avatar.
+Wealth management and advisory services remain fragmented and inaccessible for many banking customers. Banks often lack a complete view of customer investment behavior, spending habits, goals, and risk comfort, which limits their ability to provide timely, personalized, and data-driven financial guidance.
 
-## Problem
+Another important challenge is unusual payment verification. Today, if a customer makes a transaction that looks different from their regular behavior, banks may need manual confirmation. If this happens after working hours, the verification can be delayed, causing inconvenience and failed customer experience.
 
-Wealth management is often fragmented, advisor-dependent, and inaccessible to many regular banking customers.
+## Proposed Solution
 
-Customers often do not know:
-- How much they can safely invest
-- Where to keep idle money
-- Whether they should take a loan
-- Whether an investment platform is safe
-- Why an unusual transaction is delayed
+ArthaSaarthi AI is a bank-integrated AI assistant that acts as a digital wealth companion inside the bank’s mobile application. It uses customer banking behavior, spending patterns, financial goals, product rules, and secure authentication to provide safer and more personalized financial guidance.
 
-Banks also face challenges:
-- Scaling wealth advisory to all customers
-- Personalizing recommendations
-- Reducing manual advisory workload
-- Verifying unusual transactions after working hours
-- Maintaining trust, compliance, and fraud protection
-
-## Solution
-
-ArthaSaarthi AI acts as a digital financial companion inside the bank app.
-
-It uses:
-- Customer financial behavior
-- AI avatar interaction
-- RAG-based verified bank knowledge
-- Trust Layer AI
-- What-if simulation
-- Funding account recommendations
-- AI Transaction Guardian
-- JWT authentication
-- MPIN step-up verification
+The assistant helps customers understand what they can invest, whether they should take a loan, how they can improve idle balance returns, and whether an unusual payment should be confirmed or blocked.
 
 ## Key Features
 
-### 1. Wealth Dashboard
-Shows:
-- Financial health score
-- Monthly income
-- Safe-to-invest amount
-- Idle balance
-- Next best financial action
+- AI Advisor Chat for personalized financial guidance
+- Financial Twin to understand customer income, spending, goals, and risk behavior
+- What-if Simulator for loan and investment decisions
+- Funding Benefits module for sweep deposits and better account usage
+- Payment Guardian for unusual transaction confirmation
+- Trust Layer AI for suitability, policy, authentication, and audit checks
+- RAG-based grounding using bank policies, product rules, and financial documents
+- Secure MPIN, OTP, biometric, and JWT-based verification flow
 
-### 2. AI Avatar Advisor
-A conversational assistant that answers questions like:
-- Can I invest ₹6,000 this month?
-- Should I take a ₹2 lakh loan?
-- Is this platform promising 30% return safe?
-- Where should I keep idle balance?
+## Prototype Modules
 
-### 3. Goal Planning
-Tracks goals such as:
-- Emergency fund
-- Home down payment
-- Tax saving
+### AI Advisor Chat
 
-### 4. What-If Wealth Simulator
-Helps customers understand:
-- EMI impact
-- Loan affordability
-- Cash flow effect
-- Goal delay
+A conversational assistant that answers customer questions about investments, loans, funding benefits, payment alerts, and financial risk in simple language.
 
-### 5. Smart Funding Account Recommender
-Suggests where idle money should sit:
-- Savings account
-- Sweep-in FD
-- Recurring deposit
-- Goal-based savings
+### Financial Twin
 
-### 6. Platform Safety Checker
-Flags risky or unverified investment platforms.
+Creates a living financial profile of the customer using banking behavior such as income, spending, idle balance, savings capacity, goals, and emergency buffer.
 
-### 7. AI Transaction Guardian
-Detects unusual payments and asks the customer for instant confirmation using MPIN.
+### What-if Simulator
 
-This helps prevent after-hours verification delays.
+Allows customers to test financial decisions before taking action. It can simulate EMI pressure, future investment corpus, monthly cashflow, and risk suitability.
 
-### 8. Trust Layer AI
-Checks:
-- RAG source
-- Risk suitability
-- Emergency liquidity
-- Platform safety
-- Authentication requirement
-- Audit logging
+### Funding Benefits
 
-## Demo Customer
+Suggests smarter use of idle bank balance through options like auto sweep deposits, savings upgrades, and liquidity-safe recommendations.
 
-Name: Riya Sharma  
-Monthly income: ₹82,000  
-Risk profile: Balanced  
-Financial health score: 78/100  
-Safe-to-invest amount: ₹6,000  
-Idle balance: ₹18,500  
+### Payment Guardian
 
-## Demo Flow
+Detects unusual payments and asks the customer for instant verification using MPIN, OTP, biometric approval, or JWT-verified session. This helps customers confirm transactions even outside bank working hours.
 
-1. Open the dashboard.
-2. Click Salary Nudge.
-3. Ask why ₹6,000 is recommended.
-4. Open Goals.
-5. Open What-If Lab and calculate loan impact.
-6. Open Funding and check idle money recommendation.
-7. Open Security and confirm unusual payment with MPIN.
-8. Open Trust Layer to explain responsible AI design.
+### Trust Layer AI
+
+Checks every recommendation before showing it to the customer. It verifies suitability, customer risk profile, bank policy, product rules, authentication requirements, and audit logging.
+
+## AI and RAG Architecture
+
+ArthaSaarthi AI can use an LLM for natural language conversations and explanation generation. RAG can be used to ground the assistant’s answers in trusted bank documents, product policies, interest rate rules, loan eligibility criteria, fraud monitoring rules, and regulatory guidance.
+
+The Trust Layer ensures that the AI does not give unsafe or unsuitable advice. It acts as a safety filter between the AI response and the customer.
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- Vercel for deployment
+- GitHub for version control
+
+## Demo Credentials
 
 Demo MPIN:
 
 ```text
 1234
-## Live Demo
-
-Main Website: https://artha-saarthi-psi.vercel.app/
-Prototype Demo: https://artha-saarthi-psi.vercel.app/prototype.html
-
