@@ -56,7 +56,7 @@
               <h2>Ask ArthaSaarthi anything about your money.</h2>
             </div>
 
-            <div class="agent-image-wrap">
+            <div class="agent-avatar-circle">
               <img src="assets/arthasaarthi-avatar.jpg" alt="ArthaSaarthi AI agent" />
             </div>
 
@@ -240,6 +240,7 @@
                 and risk suitability in real time.
               </p>
             </div>
+
             <div class="decision-badge">
               <span id="decisionStatus">Suitable</span>
               <p id="decisionSubtext">Plan is safe for current income.</p>
@@ -284,19 +285,33 @@
                 <h3>AI Recommendation</h3>
                 <span id="pressureLabel">Healthy</span>
               </div>
+
               <div class="risk-meter">
                 <div id="riskMeterFill"></div>
               </div>
+
               <p id="simulationOutput"></p>
               <button type="button" id="simulateBtn">Run Simulation</button>
             </div>
           </div>
 
           <div class="sim-metrics">
-            <div><span>Monthly EMI</span><strong id="emiOutput">Rs 0</strong></div>
-            <div><span>Total Interest</span><strong id="interestOutput">Rs 0</strong></div>
-            <div><span>Future Corpus</span><strong id="corpusOutput">Rs 0</strong></div>
-            <div><span>Monthly Buffer</span><strong id="cashflowOutput">Rs 0</strong></div>
+            <div>
+              <span>Monthly EMI</span>
+              <strong id="emiOutput">Rs 0</strong>
+            </div>
+            <div>
+              <span>Total Interest</span>
+              <strong id="interestOutput">Rs 0</strong>
+            </div>
+            <div>
+              <span>Future Corpus</span>
+              <strong id="corpusOutput">Rs 0</strong>
+            </div>
+            <div>
+              <span>Monthly Buffer</span>
+              <strong id="cashflowOutput">Rs 0</strong>
+            </div>
           </div>
 
           <div class="decision-card">
@@ -431,10 +446,22 @@
               </div>
               <div class="transaction-amount">Rs 85,000</div>
               <div class="transaction-details">
-                <div><span>Merchant</span><strong>Zenith Electronics</strong></div>
-                <div><span>Time</span><strong>8:42 PM</strong></div>
-                <div><span>Location</span><strong>Bengaluru</strong></div>
-                <div><span>Usual range</span><strong>Rs 2,000 - Rs 18,000</strong></div>
+                <div>
+                  <span>Merchant</span>
+                  <strong>Zenith Electronics</strong>
+                </div>
+                <div>
+                  <span>Time</span>
+                  <strong>8:42 PM</strong>
+                </div>
+                <div>
+                  <span>Location</span>
+                  <strong>Bengaluru</strong>
+                </div>
+                <div>
+                  <span>Usual range</span>
+                  <strong>Rs 2,000 - Rs 18,000</strong>
+                </div>
               </div>
             </div>
 
