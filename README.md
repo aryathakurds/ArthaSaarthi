@@ -1,6 +1,6 @@
 # ArthaSaarthi AI
 
-[Live Demo](https://artha-saarthi-psi.vercel.app/) | [Prototype Demo](https://artha-saarthi-psi.vercel.app/prototype.html)
+[Live Demo](https://artha-saarthi-psi.vercel.app/) 
 
 ArthaSaarthi AI is an AI-powered digital wealth management prototype for banks. It brings personalized wealth advisory, financial behavior analysis, loan and investment simulations, funding account benefits, unusual payment verification, and Trust Layer AI into one customer-friendly digital experience.
 
