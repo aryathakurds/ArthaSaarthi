@@ -1,0 +1,62 @@
+{
+  "customerId": "CUST-1007",
+  "name": "Riya Sharma",
+  "age": 28,
+  "city": "Pune",
+  "monthlyIncome": 82000,
+  "monthlyExpenses": 54000,
+  "monthlySavings": 22000,
+  "riskProfile": "Balanced",
+  "financialHealthScore": 78,
+  "safeToInvestThisMonth": 6000,
+  "idleBalance": 18500,
+  "currentEmi": 6000,
+  "bankSession": {
+    "jwtStatus": "Active",
+    "authProvider": "Bank verified JWT",
+    "stepUpAuth": ["MPIN", "Biometric", "OTP"]
+  },
+  "goals": [
+    {
+      "goalName": "Emergency Fund",
+      "targetAmount": 180000,
+      "currentAmount": 108000,
+      "progressPercent": 60,
+      "recommendedMonthlyContribution": 3000
+    },
+    {
+      "goalName": "Home Down Payment",
+      "targetAmount": 900000,
+      "currentAmount": 165000,
+      "progressPercent": 18,
+      "recommendedMonthlyContribution": 7000
+    },
+    {
+      "goalName": "Tax Saving",
+      "targetAmount": 150000,
+      "currentAmount": 52000,
+      "progressPercent": 35,
+      "recommendedMonthlyContribution": 1000
+    }
+  ],
+  "recommendation": {
+    "safeInvestmentAmount": 6000,
+    "allocation": [
+      {
+        "category": "Emergency Fund",
+        "amount": 3000,
+        "reason": "Emergency fund is not fully completed"
+      },
+      {
+        "category": "Long-term SIP",
+        "amount": 2000,
+        "reason": "Balanced profile with long-term wealth goal"
+      },
+      {
+        "category": "Tax Saving Bucket",
+        "amount": 1000,
+        "reason": "Useful for annual tax planning review"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2026-07-01",
+    "description": "Salary credit",
+    "category": "Income",
+    "amount": 82000,
+    "riskFlag": "normal"
+  },
+  {
+    "date": "2026-07-02",
+    "description": "House rent",
+    "category": "Housing",
+    "amount": -22000,
+    "riskFlag": "normal"
+  },
+  {
+    "date": "2026-07-03",
+    "description": "Groceries",
+    "category": "Essentials",
+    "amount": -6200,
+    "riskFlag": "normal"
+  },
+  {
+    "date": "2026-07-04",
+    "description": "Streaming subscriptions",
+    "category": "Subscriptions",
+    "amount": -899,
+    "riskFlag": "spending-optimization"
+  },
+  {
+    "date": "2026-07-05",
+    "description": "Mutual fund SIP",
+    "category": "Investment",
+    "amount": -5000,
+    "riskFlag": "normal"
+  },
+  {
+    "date": "2026-07-06",
+    "description": "Transfer to new beneficiary",
+    "category": "Payment",
+    "amount": -85000,
+    "riskFlag": "unusual-transaction",
+    "riskReasons": [
+      "High amount",
+      "New beneficiary",
+      "After bank working hours",
+      "Outside usual payment pattern"
+    ],
+    "recommendedAction": "Step-up MPIN verification before processing"
+  }
+]

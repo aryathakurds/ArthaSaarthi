@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArthaSaarthi AI Prototype</title>
+  <link rel="stylesheet" href="prototype.css" />
+</head>
+<body>
+  <div class="prototype-app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-actions">
+        <a href="index.html" class="back-circle" title="Back to main site">←</a>
+        <button type="button" class="collapse-btn" id="collapseBtn" title="Collapse sidebar">‹</button>
+      </div>
+
+      <div class="brand-block">
+        <div class="brand-mark">A</div>
+        <div>
+          <h1>ArthaSaarthi</h1>
+          <p>AI wealth assistant</p>
+        </div>
+      </div>
+
+      <div class="mini-agent">
+        <img src="assets/arthasaarthi-avatar.jpg" alt="ArthaSaarthi AI agent" />
+        <div>
+          <strong>Bank verified</strong>
+          <span>JWT session active</span>
+        </div>
+      </div>
+
+      <nav class="demo-nav">
+        <button type="button" class="nav-item active" data-page="advisor">AI Advisor Chat</button>
+        <button type="button" class="nav-item" data-page="financial-twin">Financial Twin</button>
+        <button type="button" class="nav-item" data-page="simulator">What-if Simulator</button>
+        <button type="button" class="nav-item" data-page="funding">Funding Benefits</button>
+        <button type="button" class="nav-item" data-page="guardian">Payment Guardian</button>
+        <button type="button" class="nav-item" data-page="trust">Trust Layer AI</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span></span>
+        Secure demo environment
+      </div>
+
+      <div class="resize-handle" id="resizeHandle"></div>
+    </aside>
+
+    <main class="prototype-main">
+      <section class="page active advisor-page" id="advisor">
+        <div class="advisor-layout">
+          <div class="agent-card compact-agent-card">
+            <div class="agent-top">
+              <p class="agent-status">LIVE BANK ASSISTANT</p>
+              <h2>Ask ArthaSaarthi anything about your money.</h2>
+            </div>
+
+            <div class="agent-image-wrap">
+              <img src="assets/arthasaarthi-avatar.jpg" alt="ArthaSaarthi AI agent" />
+            </div>
+
+            <p class="agent-description">
+              A bank-verified AI advisor that explains investments, loans, funding benefits,
+              unusual payment alerts, and financial risk in simple language.
+            </p>
+
+            <div class="agent-stats">
+              <div>
+                <strong>78/100</strong>
+                <span>Health score</span>
+              </div>
+              <div>
+                <strong>Rs 12k</strong>
+                <span>Safe to invest</span>
+              </div>
+              <div>
+                <strong>JWT</strong>
+                <span>Verified session</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-panel compact-chat-panel">
+            <div class="chat-header">
+              <div>
+                <p>AI Advisor Chat</p>
+                <h3>Personalized banking guidance</h3>
+              </div>
+              <span>Online</span>
+            </div>
+
+            <div class="chat-window" id="chatWindow">
+              <div class="chat-message ai">
+                <span>ArthaSaarthi</span>
+                <p>
+                  Hi, I am your bank verified AI wealth assistant. Ask me about investing,
+                  loans, funding account benefits, or unusual payment alerts.
+                </p>
+              </div>
+            </div>
+
+            <div class="quick-prompts">
+              <button type="button" data-prompt="Can I invest Rs 10000 this month?">Invest Rs 10000?</button>
+              <button type="button" data-prompt="Should I take a loan right now?">Take a loan?</button>
+              <button type="button" data-prompt="Why was my payment flagged?">Payment flagged?</button>
+            </div>
+
+            <form class="chat-form" id="chatForm">
+              <input id="chatInput" type="text" placeholder="Ask your AI advisor..." autocomplete="off" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="page twin-page" id="financial-twin">
+        <div class="dashboard-shell">
+          <div class="dashboard-hero">
+            <div>
+              <p class="section-kicker">FINANCIAL TWIN</p>
+              <h2>Customer money behavior, converted into a living financial profile.</h2>
+              <p>
+                ArthaSaarthi creates a secure financial twin from bank transactions,
+                balances, spending rhythm, goals, and risk appetite.
+              </p>
+            </div>
+
+            <div class="score-card">
+              <div class="score-ring"><span>78</span></div>
+              <div>
+                <small>Financial Health Score</small>
+                <h3>Balanced and improving</h3>
+                <p>Low EMI pressure, stable income, and healthy saving pattern.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card">
+              <span>Monthly Income</span>
+              <strong>Rs 82,000</strong>
+              <p>Salary credited regularly</p>
+            </div>
+            <div class="metric-card">
+              <span>Avg. Spending</span>
+              <strong>Rs 51,200</strong>
+              <p>Normal range detected</p>
+            </div>
+            <div class="metric-card">
+              <span>Idle Balance</span>
+              <strong>Rs 48,500</strong>
+              <p>Can be optimized</p>
+            </div>
+            <div class="metric-card">
+              <span>Safe To Invest</span>
+              <strong>Rs 12,000</strong>
+              <p>After emergency buffer</p>
+            </div>
+          </div>
+
+          <div class="twin-grid">
+            <div class="dashboard-card wide">
+              <div class="card-head">
+                <h3>Spending Pattern</h3>
+                <span>Last 30 days</span>
+              </div>
+
+              <div class="spend-row">
+                <p>Rent & Bills</p>
+                <div><span style="width: 74%;"></span></div>
+                <strong>Rs 24,000</strong>
+              </div>
+              <div class="spend-row">
+                <p>Food & Grocery</p>
+                <div><span style="width: 48%;"></span></div>
+                <strong>Rs 12,400</strong>
+              </div>
+              <div class="spend-row">
+                <p>Shopping</p>
+                <div><span style="width: 34%;"></span></div>
+                <strong>Rs 8,800</strong>
+              </div>
+              <div class="spend-row">
+                <p>Investments</p>
+                <div><span style="width: 28%;"></span></div>
+                <strong>Rs 6,000</strong>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3>AI Insight</h3>
+                <span>Live</span>
+              </div>
+              <p class="insight-text">
+                Customer can increase monthly SIP by Rs 4,000 without affecting
+                liquidity. A sweep deposit can also improve returns on idle balance.
+              </p>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3>Behavior Signals</h3>
+                <span>Bank data</span>
+              </div>
+              <ul class="signal-list">
+                <li>Salary pattern is consistent.</li>
+                <li>Discretionary spend rose by 8%.</li>
+                <li>Emergency buffer is protected.</li>
+                <li>No missed EMI detected.</li>
+              </ul>
+            </div>
+
+            <div class="dashboard-card wide">
+              <div class="card-head">
+                <h3>Goal Readiness</h3>
+                <span>Vacation fund</span>
+              </div>
+              <div class="goal-progress">
+                <div>
+                  <p>Rs 62,000 saved of Rs 1,20,000</p>
+                  <strong>52%</strong>
+                </div>
+                <span><i></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page simulator-page" id="simulator">
+        <div class="simulator-dashboard">
+          <div class="simulator-hero">
+            <div>
+              <p class="section-kicker">WHAT-IF SIMULATOR</p>
+              <h2>Test loans and investments before the customer commits.</h2>
+              <p>
+                The simulator checks EMI pressure, monthly buffer, investment growth,
+                and risk suitability in real time.
+              </p>
+            </div>
+            <div class="decision-badge">
+              <span id="decisionStatus">Suitable</span>
+              <p id="decisionSubtext">Plan is safe for current income.</p>
+            </div>
+          </div>
+
+          <div class="simulator-grid">
+            <div class="sim-card input-card">
+              <div class="card-head">
+                <h3>Loan Scenario</h3>
+                <span>Editable</span>
+              </div>
+              <label>Loan amount
+                <input id="loanAmount" type="number" value="350000" />
+              </label>
+              <label>Interest rate
+                <input id="interestRate" type="number" value="10.5" step="0.1" />
+              </label>
+              <label>Tenure in months
+                <input id="tenureMonths" type="number" value="36" />
+              </label>
+            </div>
+
+            <div class="sim-card input-card">
+              <div class="card-head">
+                <h3>Investment Scenario</h3>
+                <span>Editable</span>
+              </div>
+              <label>Monthly investment
+                <input id="investmentAmount" type="number" value="7000" />
+              </label>
+              <label>Expected return
+                <input id="investmentReturn" type="number" value="11" step="0.1" />
+              </label>
+              <label>Years
+                <input id="investmentYears" type="number" value="5" />
+              </label>
+            </div>
+
+            <div class="sim-card result-card">
+              <div class="card-head">
+                <h3>AI Recommendation</h3>
+                <span id="pressureLabel">Healthy</span>
+              </div>
+              <div class="risk-meter">
+                <div id="riskMeterFill"></div>
+              </div>
+              <p id="simulationOutput"></p>
+              <button type="button" id="simulateBtn">Run Simulation</button>
+            </div>
+          </div>
+
+          <div class="sim-metrics">
+            <div><span>Monthly EMI</span><strong id="emiOutput">Rs 0</strong></div>
+            <div><span>Total Interest</span><strong id="interestOutput">Rs 0</strong></div>
+            <div><span>Future Corpus</span><strong id="corpusOutput">Rs 0</strong></div>
+            <div><span>Monthly Buffer</span><strong id="cashflowOutput">Rs 0</strong></div>
+          </div>
+
+          <div class="decision-card">
+            <h3>Decision Logic</h3>
+            <ul id="decisionList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page funding-page" id="funding">
+        <div class="funding-dashboard">
+          <div class="funding-hero">
+            <div>
+              <p class="section-kicker">FUNDING BENEFITS</p>
+              <h2>Turn idle balance into smarter bank-backed value.</h2>
+              <p>
+                ArthaSaarthi recommends sweep deposits, savings upgrades, and liquidity
+                protection using the customer's own bank account data.
+              </p>
+            </div>
+
+            <div class="funding-gain-card">
+              <span>Projected extra yearly benefit</span>
+              <strong id="fundingGain">Rs 0</strong>
+              <p>Without disturbing daily spending needs.</p>
+            </div>
+          </div>
+
+          <div class="funding-grid">
+            <div class="funding-card optimizer-card">
+              <div class="card-head">
+                <h3>Smart Optimizer</h3>
+                <span>Editable</span>
+              </div>
+              <label>Idle balance
+                <input id="idleBalanceInput" type="number" value="48500" />
+              </label>
+              <label>Keep liquid reserve
+                <input id="liquidReserveInput" type="number" value="18000" />
+              </label>
+              <label>Savings rate
+                <input id="savingsRateInput" type="number" value="3.5" step="0.1" />
+              </label>
+              <label>Sweep FD rate
+                <input id="sweepRateInput" type="number" value="6.8" step="0.1" />
+              </label>
+              <button type="button" id="optimizeFundingBtn">Optimize Benefits</button>
+            </div>
+
+            <div class="funding-card allocation-card">
+              <div class="card-head">
+                <h3>AI Allocation</h3>
+                <span>Safe split</span>
+              </div>
+              <div class="allocation-ring" id="allocationRing">
+                <strong id="sweepPercent">0%</strong>
+                <span>to sweep</span>
+              </div>
+              <div class="allocation-row">
+                <p>Sweep deposit</p>
+                <strong id="sweepAmount">Rs 0</strong>
+              </div>
+              <div class="allocation-row">
+                <p>Liquid reserve</p>
+                <strong id="liquidAmount">Rs 0</strong>
+              </div>
+            </div>
+
+            <div class="funding-card benefit-card">
+              <div class="card-head">
+                <h3>Benefit Comparison</h3>
+                <span>Annual</span>
+              </div>
+              <div class="benefit-row">
+                <p>Current savings interest</p>
+                <strong id="currentInterest">Rs 0</strong>
+              </div>
+              <div class="benefit-row highlight">
+                <p>Optimized bank benefit</p>
+                <strong id="optimizedInterest">Rs 0</strong>
+              </div>
+              <div class="benefit-row">
+                <p>Safety status</p>
+                <strong id="fundingSafety">Approved</strong>
+              </div>
+              <p class="funding-note" id="fundingSafetyText"></p>
+            </div>
+          </div>
+
+          <div class="product-strip">
+            <div>
+              <span>Recommended</span>
+              <h3>Auto Sweep Deposit</h3>
+              <p id="fundingActionText"></p>
+            </div>
+            <div>
+              <span>Suggested amount</span>
+              <strong id="productSweepAmount">Rs 0</strong>
+            </div>
+            <div>
+              <span>Bank rate</span>
+              <strong id="productSweepRate">6.8%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page guardian-page" id="guardian">
+        <div class="guardian-dashboard">
+          <div class="guardian-hero">
+            <div>
+              <p class="section-kicker">PAYMENT GUARDIAN</p>
+              <h2>Confirm unusual payments instantly, even after banking hours.</h2>
+              <p>
+                When a transaction looks unusual, ArthaSaarthi pauses the payment and
+                verifies the customer through MPIN, OTP, biometric, or JWT session.
+              </p>
+            </div>
+
+            <div class="risk-badge">
+              <span>High attention</span>
+              <strong>Rs 85,000</strong>
+              <p>Unusual payment detected</p>
+            </div>
+          </div>
+
+          <div class="guardian-grid">
+            <div class="guardian-card transaction-card">
+              <div class="card-head">
+                <h3>Flagged Transaction</h3>
+                <span>Paused</span>
+              </div>
+              <div class="transaction-amount">Rs 85,000</div>
+              <div class="transaction-details">
+                <div><span>Merchant</span><strong>Zenith Electronics</strong></div>
+                <div><span>Time</span><strong>8:42 PM</strong></div>
+                <div><span>Location</span><strong>Bengaluru</strong></div>
+                <div><span>Usual range</span><strong>Rs 2,000 - Rs 18,000</strong></div>
+              </div>
+            </div>
+
+            <div class="guardian-card anomaly-card">
+              <div class="card-head">
+                <h3>Behavior Analysis</h3>
+                <span>AI risk scan</span>
+              </div>
+              <div class="anomaly-row">
+                <p>Amount unusual</p>
+                <div><span style="width: 92%;"></span></div>
+                <strong>92%</strong>
+              </div>
+              <div class="anomaly-row">
+                <p>Time unusual</p>
+                <div><span style="width: 68%;"></span></div>
+                <strong>68%</strong>
+              </div>
+              <div class="anomaly-row">
+                <p>Merchant familiarity</p>
+                <div><span style="width: 38%;"></span></div>
+                <strong>38%</strong>
+              </div>
+            </div>
+
+            <div class="guardian-card verify-card">
+              <div class="card-head">
+                <h3>Customer Verification</h3>
+                <span>Secure action</span>
+              </div>
+              <div class="verify-methods">
+                <button type="button" class="verify-method active" data-method="MPIN">MPIN</button>
+                <button type="button" class="verify-method" data-method="OTP">OTP</button>
+                <button type="button" class="verify-method" data-method="Biometric">Biometric</button>
+                <button type="button" class="verify-method" data-method="JWT">JWT</button>
+              </div>
+              <input id="mpinInput" type="password" maxlength="4" placeholder="Enter MPIN: 1234" />
+              <div class="guardian-actions">
+                <button type="button" id="confirmPayment">Confirm Payment</button>
+                <button type="button" id="blockPayment">Block Payment</button>
+              </div>
+              <p class="payment-status" id="paymentStatus">
+                Payment is paused until the customer confirms identity.
+              </p>
+            </div>
+
+            <div class="guardian-card timeline-card">
+              <div class="card-head">
+                <h3>Real-time Flow</h3>
+                <span>Bank + AI</span>
+              </div>
+              <div class="timeline">
+                <div><span></span><p>Transaction initiated</p></div>
+                <div><span></span><p>AI detects unusual behavior</p></div>
+                <div><span></span><p>Customer verifies securely</p></div>
+                <div><span></span><p>Bank audit log is updated</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page trust-layer-page" id="trust">
+        <div class="trust-shell">
+          <div class="trust-hero">
+            <div class="trust-hero-copy">
+              <p class="trust-kicker">TRUST LAYER AI</p>
+              <h2>
+                Advice that is checked,
+                <span>explained, and bank-approved.</span>
+              </h2>
+              <p>
+                Before ArthaSaarthi suggests an investment, loan decision, funding
+                benefit, or payment approval, the Trust Layer verifies customer
+                suitability, bank policy, product risk, authentication, and audit readiness.
+              </p>
+            </div>
+
+            <div class="trust-decision-card">
+              <div class="trust-card-top">
+                <span class="trust-live-dot"></span>
+                <p>Policy engine active</p>
+              </div>
+              <div class="trust-score-wrap">
+                <div class="trust-score-ring">
+                  <span id="trustScore">94%</span>
+                </div>
+                <div>
+                  <small>Trust readiness</small>
+                  <h3 id="trustDecisionState">Approved with guardrails</h3>
+                </div>
+              </div>
+              <p id="trustDecisionText">
+                Recommendation can be shown because it matches the customer's risk profile,
+                has verified source evidence, and includes a clear safety explanation.
+              </p>
+              <div class="trust-meter">
+                <div id="trustMeter"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-control-panel">
+            <button type="button" class="trust-action active" data-trust-mode="approved">Approved Advice</button>
+            <button type="button" class="trust-action" data-trust-mode="review">Needs Review</button>
+            <button type="button" class="trust-action" data-trust-mode="blocked">Block Unsafe Advice</button>
+          </div>
+
+          <div class="trust-grid">
+            <div class="trust-panel trust-large">
+              <div class="trust-panel-head">
+                <p>AI Safety Pipeline</p>
+                <span>Live checks</span>
+              </div>
+              <div class="trust-pipeline">
+                <div class="pipeline-step">
+                  <span>01</span>
+                  <h4>Customer Profile</h4>
+                  <p>Income, spending, goals, risk appetite, and emergency buffer are checked.</p>
+                </div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-step">
+                  <span>02</span>
+                  <h4>RAG Evidence</h4>
+                  <p>Bank product rules, RBI guidance, and internal policy documents are retrieved.</p>
+                </div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-step">
+                  <span>03</span>
+                  <h4>Suitability Guard</h4>
+                  <p>Unsafe loan, investment, or funding suggestions are filtered before display.</p>
+                </div>
+                <div class="pipeline-line"></div>
+                <div class="pipeline-step">
+                  <span>04</span>
+                  <h4>Explainability</h4>
+                  <p>The customer sees why the advice is suitable and what risks are involved.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-panel">
+              <div class="trust-panel-head">
+                <p>Source Grounding</p>
+                <span>RAG</span>
+              </div>
+              <div class="source-stack">
+                <div>
+                  <strong>Bank FD policy</strong>
+                  <small>Interest and lock-in rules verified</small>
+                </div>
+                <div>
+                  <strong>Loan eligibility rulebook</strong>
+                  <small>EMI pressure and repayment risk checked</small>
+                </div>
+                <div>
+                  <strong>Fraud monitoring policy</strong>
+                  <small>Unusual payment verification flow confirmed</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-panel">
+              <div class="trust-panel-head">
+                <p>Customer Protection</p>
+                <span>Safety</span>
+              </div>
+              <div class="protection-list">
+                <div><span class="status-dot pass"></span><p>Risk profile matched</p></div>
+                <div><span class="status-dot pass"></span><p>Emergency balance protected</p></div>
+                <div><span class="status-dot pass"></span><p>MPIN or JWT required for sensitive action</p></div>
+                <div><span class="status-dot pass"></span><p>Audit trail stored for bank review</p></div>
+              </div>
+            </div>
+
+            <div class="trust-panel trust-large">
+              <div class="trust-panel-head">
+                <p>Explainable AI Output</p>
+                <span>Customer ready</span>
+              </div>
+              <div class="explain-card">
+                <h4>Why this recommendation is safe</h4>
+                <p>
+                  ArthaSaarthi recommends moving only the surplus balance into a sweep
+                  deposit because the customer's monthly spending pattern is stable,
+                  emergency reserve remains protected, and the product risk is low.
+                </p>
+                <div class="explain-tags">
+                  <span>Low risk</span>
+                  <span>Policy matched</span>
+                  <span>RAG verified</span>
+                  <span>Consent needed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-panel">
+              <div class="trust-panel-head">
+                <p>Audit Trail</p>
+                <span>Bank log</span>
+              </div>
+              <div class="audit-feed" id="trustAuditFeed">
+                <div>
+                  <span>Now</span>
+                  <strong>Advice approved</strong>
+                  <p>Suitability, RAG evidence, and policy checks passed.</p>
+                </div>
+                <div>
+                  <span>2 sec ago</span>
+                  <strong>Sources retrieved</strong>
+                  <p>Bank product policy and customer profile matched.</p>
+                </div>
+                <div>
+                  <span>4 sec ago</span>
+                  <strong>Risk scan completed</strong>
+                  <p>No high-risk recommendation detected.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="trust-panel">
+              <div class="trust-panel-head">
+                <p>Final Gate</p>
+                <span>Decision</span>
+              </div>
+              <div class="final-gate">
+                <h3>Show advice to customer</h3>
+                <p>
+                  The assistant can explain the recommendation, but money movement still
+                  requires customer consent and secure bank authentication.
+                </p>
+                <div class="gate-lock">
+                  <span></span>
+                  <p>JWT verified session required</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="prototype.js"></script>
+</body>
+</html>
